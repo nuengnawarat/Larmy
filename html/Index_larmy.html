@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+
+    <title>Larmy</title>
+</head>
+
+<body>
+    <!-- start nav bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning" style="padding-left:223px;padding-right:223px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01 ">
+                <a class="navbar-brand" href="Index_larmy.html"><img class="nav-logo" src="../img/logonav.png"></a>
+                <div class="input-group" style="margin:auto;">
+                    <input class="form-control" type="search" placeholder="@" aria-label="Search">
+                    <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-md-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="profile_larmy.html"> <i class="fas fa-user navicon"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="float-right" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i style="padding-top:10px;" class="fas fa-bell navicon"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                                style="width:300px;height:500px;margin-top:40px;">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item" style="padding:10px;">
+                        <div class="dropdown show">
+                            <a class="float-right" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog navicon"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="margin-top:30px;">
+                                <a class="dropdown-item" href="setting_larmy.html"><i class="fas fa-user-edit"></i> Edit Profile</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                            </div>
+                        </div>
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!--end  nav bar -->
+
+    <div class="contianer" style="margin-top:65px;padding-left:250px;padding-right:223px;float: left;overflow:auto;">
+        <div class="row">
+            <!-- start box collumn left -->
+            <div class="col-8">
+                <form
+                    style="padding:10px;border:1px solid grey;border-radius:4px;width:100%;background-color:white;overflow:auto;">
+                    <p style="float:left;"><strong>Post</strong></p>
+                    <div class="dropdown float-right">
+
+                        <button class="btn-warning dropdown-toggle" type="button" data-target=".bd-example-modal-sm"
+                            data-toggle="modal" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-plus-circle"></i> <strong>Situation</strong> </button>
+                        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog"
+                            aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"><strong>Situation</strong></h5>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <a style="padding-top:20px;padding-bottom:20px;" class="dropdown-item" href="#"><img
+                                            style="padding-right:20px" src="../img/situation/general.png">
+                                        <strong>General</strong></a>
+                                    <a style="padding-top:20px;padding-bottom:20px;" class="dropdown-item" href="#"><img
+                                            style="padding-right:20px"
+                                            src="../img/situation/accident.png"><strong>Accident</strong></a>
+                                    <a style="padding-top:20px;padding-bottom:20px;" class="dropdown-item" href="#"><img
+                                            style="padding-right:20px"
+                                            src="../img/situation/natural.png"><strong>Natural disaster</strong></a>
+                                    <a style="padding-top:20px;padding-bottom:20px;" class="dropdown-item" href="#"><img
+                                            style="padding-right:20px"
+                                            src="../img/situation/traffic.png"><strong>Traffic</strong></a>
+                                    <a style="padding-top:20px;padding-bottom:20px;" class="dropdown-item" href="#"><img
+                                            style="padding-right:20px"
+                                            src="../img/situation/event.png"><strong>Event</strong></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <input type="text" class="form-control" placeholder="What Happen?">
+                    <a href="#picupload"><img class="postboximg" src="../img/pic_upload.png"></a>
+                    <a href="#videoupload"><img class="postboximg" src="../img/video_upload.png"></a>
+                    <a href="#pinlocation"><img class="postboximg" src="../img/pin_location.png"></a>
+                    <button style="float:right;border-radius: 50px;margin-top:10px; " class="btn-warning "
+                        type="button"><strong>Share</strong> </button>
+                </form>
+                <div style="margin-top:10px;float:left;overflow:auto;">
+                    <div
+                        style="padding:10px;border:1px solid grey;border-radius:4px;background-color:white;height:auto;overflow:hidden;">
+                        <div style="clear:both;"><a class="hov" href="#profile"> <img class="profileimgpost"
+                                    src="../img/imgpf.jpg">
+                                <div class="dropdown show">
+                                    <a class="float-right" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-h float-right"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+
+                                <img class="savepostimg float-right" src="../img/savepost.png">
+                                <a href="profile_larmy.html">
+                                    <h5 style="margin:0px;"> Profile Name</h5>
+                                </a>
+                                <small> 4 mins</small>
+                            </a>
+                        </div>
+                        <div style="clear:both;padding:5px;width:100%;height: auto;">
+                            <p>Chania is the capital of the Chania region on the island of Crete. The city can be
+                                divided in two
+                                parts, the old town and the modern city. Chania is the capital of the Chania region on
+                                the
+                                island of Crete. The city can be divided in two parts, the old town and the modern city.
+                                Chania
+                                is the capital of the Chania region on the island of Crete. The city can be divided in
+                                two
+                                parts, the old town and the modern city. Chania is the capital of the Chania region on
+                                the
+                                island of Crete. The city can be divided in two parts, the old town and the modern city.
+                            </p>
+                            <img class="imgpost-objectfit" src="../img/img1.jpg">
+                        </div>
+                        <svg style="margin:0;" height="1" width=100% style="margin-top:20px;">
+                            <line x1="0" y1="0" x2="2000" y2="0" style="stroke:rgb(112, 112, 112);stroke-width:2" />
+                        </svg>
+                        <div style="padding: 5px;">
+                            <a style="margin-left:10%;"></a>
+                            <a style="margin-left:20%;"><img src="../img/comments.png"></a>
+                            <a style="margin-left:20%;"><img src="../img/sharing.png"></a>
+                            <a style="margin-left:20%;"><img src="../img/placeholder.png"></a>
+
+                        </div>
+                    </div>
+                    <div
+                        style="margin:10px 0px;padding:10px;border:1px solid grey;border-radius:4px;background-color:white;height:auto;overflow:hidden;">
+                        <div style="clear:both;">
+                            <img class="profileimgpost" src="../img/imgpf.jpg">
+                            <div class="dropdown show">
+                                <a class="float-right" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h float-right"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <img class="savepostimg float-right" src="../img/savepost.png">
+                            <h5 style="margin:0px;"> Profile Name</h5>
+                            <small> 4 mins</small>
+                        </div>
+                        <div style="clear:both;padding:5px;width:100%;height: auto;">
+                            <p>Chania is the capital of the Chania region on the island of Crete. The city can be
+                                divided in two
+                                parts, the old town and the modern city. Chania is the capital of the Chania region on
+                                the
+                                island of Crete. The city can be divided in two parts, the old town and the modern city.
+                                Chania
+                                is the capital of the Chania region on the island of Crete. The city can be divided in
+                                two
+                                parts, the old town and the modern city. Chania is the capital of the Chania region on
+                                the
+                                island of Crete. The city can be divided in two parts, the old town and the modern city.
+                            </p>
+                            <img class="imgpost-objectfit" src="../img/img1.jpg">
+                        </div>
+                        <svg style="margin:0;" height="1" width=100% style="margin-top:20px;">
+                            <line x1="0" y1="0" x2="2000" y2="0" style="stroke:rgb(112, 112, 112);stroke-width:2" />
+                        </svg>
+                        <div style="padding: 5px;">
+                            <a style="margin-left:10%;"></a>
+                            <a style="margin-left:20%;"><img src="../img/comments.png"></a>
+                            <a style="margin-left:20%;"><img src="../img/sharing.png"></a>
+                            <a style="margin-left:20%;"><img src="../img/placeholder.png"></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end box collumn left -->
+
+            <!-- box collumn right -->
+            <div class="col-4">
+                <div style="overflow:auto;margin-left: 10px;">
+                    <div style="padding:10px;height:auto;overflow:hidden;">
+                        <a href="profile_larmy.html"><img style="width:20%" class="profileimgbox float-left"
+                                src="../img/imgpf.jpg">
+                            <h5 style="margin-left:15px;margin-top:7%;float:left;"> Profile Name</h5>
+                        </a>
+                    </div>
+                </div>
+                <div style="padding-left:10px">
+                    <div
+                        style="width:100%;margin-top:10px;float:right;overflow:auto;border:1px solid grey;border-radius:4px;background-color:white;">
+                        <div style="padding:10px;height:auto;overflow:hidden;">
+                            <h5 style="float:left;"> Filter</h5><a class="float-right" href="#see all"><small>See
+                                    all</small></a><br>
+                            <svg style="margin:0;" height="1" width=100% style="margin-top:20px;">
+                                <line x1="0" y1="0" x2="2000" y2="0" style="stroke:rgb(112, 112, 112);stroke-width:2" />
+                            </svg>
+                            <p>one</p>
+                            <p>two</p>
+                            <p>three</p>
+                            <p>four</p>
+                            <p>five</p>
+                        </div>
+                    </div>
+                    <div
+                        style="width:100%;margin-top:10px;float:right;overflow:auto;border:1px solid grey;border-radius:4px;background-color:white;">
+                        <div style="padding:10px;height:auto;overflow:hidden;">
+                            <h5 style="float:left;"> Filter</h5><a class="float-right" href="#see all"><small>See
+                                    all</small></a><br>
+                            <svg style="margin:0;" height="1" width=100% style="margin-top:20px;">
+                                <line x1="0" y1="0" x2="2000" y2="0" style="stroke:rgb(112, 112, 112);stroke-width:2" />
+                            </svg>
+                            <p>one</p>
+                            <p>two</p>
+                            <p>three</p>
+                            <p>four</p>
+                            <p>five</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end box collumn right -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+
+    </script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+p.groove {
+    border-style: groove;
+}
+div.round1 {
+    float: left;
+    overflow:auto;
+    border: 2px solid rgb(75, 75, 75);
+    background-color: white;
+    border-radius: 5px;
+    width: 50%;
+    padding: 20px 20px 0px 0px;
+    margin: 10px 18px 0px 190px;
+    box-sizing: border-box;
+    text-align: center;
+    
+  }
+.navbar {
+    overflow:auto;
+    background-color: rgb(252, 223, 58);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+div.right {
+    float:right;
+    overflow: auto;
+    border: 2px solid rgb(75, 75, 75);
+    background-color: white;
+    border-radius: 5px;
+    width: 25%;
+    padding: 150px 20px 150px 20px;
+    margin: 250px 202px 130px 0px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+line {
+    background-color: rgb(110, 110, 110);
+    margin-top: 300px;
+    margin-bottom: 0;
+    margin-left: 500px;
+    margin-right: 0;
+}
+body {
+    overflow: auto;
+    background-color: rgb(224, 224, 224);
+    top: 0;
+    left: 0;
+    width: 100;
+}
+.pad{
+    padding-top:0;
+    padding-bottom:0;
+    padding-left: 0;
+    padding-right: 0; 
+}
+.mar{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 200px;
+    margin-right: 0;
+}
+input[type=textbox] {
+    float: left;
+    overflow: auto;
+    width: 50%;
+    padding: 70px 20px 70px 0px;
+    margin: 65px 180px 0px 190px;
+    box-sizing: border-box;
+    border: 2px solid rgb(146, 146, 146);
+    border-radius: 4px;
+  }
+  img {
+    border-radius: 4px;
+  }
+  button.a {
+    background-color:yellow;
+    border-radius: 16px;
+    color: rgb(0, 0, 0);
+    padding: 2px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  button.fb {
+    background-color:rgb(70, 132, 226);
+    border-radius: 16px;
+    font-family: 'Segoe UI', Tahoma;
+    color: rgb(255, 255, 255);
+    padding: 2px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width:750px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width:100%;
+    }
+  }
